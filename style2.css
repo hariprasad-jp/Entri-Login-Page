@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #0033A0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    place-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 30px;
+    color: white;
+    text-decoration: solid;
+    width: 100px;
+    height: 32px;
+    display: flex;
+
+
+}
+
+.nav {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    place-content: space-between;
+}
+
+.nav a {
+    width: fit-content;
+    position: relative;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+
+}
+
+.toggle-btn {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    top: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+.dropdown-menu ul {
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+
+}
+
+.dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu ul:hover {
+    display: block;
+
+}
+
+
+/*Responsive Design*/
+
+@media(min-width: 480px) {
+    .nav a {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+@media(min-width: 1280px) {
+    .nav a {
+        display: block;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+
+.main-container {
+
+    background-color: #0033A0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    place-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 600px;
+    justify-content: center;
+
+}
+
+.text-container {
+
+    width: 50%;
+    color: rgb(253, 253, 253);
+    font-weight: bolder;
+}
+
+.content-section {
+    max-width: 600px;
+}
+
+.text-container h1 {
+
+    font-size: 60px;
+    letter-spacing: .40px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-container h2 {
+
+    font-size: 40px;
+    letter-spacing: .40px;
+}
+
+.text-container h3 {
+
+    margin: 10px 0 40px;
+}
+
+.text-container a {
+
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 40px;
+    margin-left: 40%;
+    background-color: rgb(255, 255, 0);
+    border: none;
+    transition: all 0.3s ease-out;
+}
+
+.text-container a:hover {
+
+    background-color: rgb(0, 35, 96);
+    transition-delay: 0.1s;
+    width: 200px;
+}
+
+
+
+
+
+
+.img-container {
+    width: 35%;
+    height: 100%;
+
+
+}
+
+
+
+
+.imgClass {
+    background-image: url('Bg\ image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+
+.login {
+    position: absolute;
+    background: #0033A0;
+    width: 100%;
+    height: 475px;
+}
+.login-container {
+    position: relative;
+    top: 50px;
+}
+
+.login .login-section {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    background: yellow;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    opacity: 75px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+
+}
+
+.login-section h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
+
+.login-section .input-box {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* border: 1px solid #000000; */
+    outline: none;
+    border-radius: 40px;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 50px;
+    align-items: center;
+    place-content: space-between;
+}
+
+.icon-class {
+    width: 8%;
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-class {
+    width: 90%;
+}
+
+.input-field {
+    border-color: transparent;
+}
+
+.login-section .remember-forgot {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+    margin-left: 26%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.remember-forgot a {
+    margin-left: -12%;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+    padding-left: 45%;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login-section .btn {
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: #0033A0;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    transition: all 0.3 ease;
+}
+
+.login-section .btn:hover {
+    background: #002064;
+    transition-delay: 0.2s;
+}
+
+.login-section .register {
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.login-section .register a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.login-section .register a:hover {
+    text-decoration: underline;
+}
+
+.mentors{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 500px;
+}
+.txtcenter{
+
+
+    text-align: center;
+    
+}
+.section-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    place-content: space-evenly;
+    top: 50px;
+    position: relative;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
+
+.card-container:hover{
+    box-shadow: 5px 5px 10px #0033a078;
+    transform: scaleY(1.05);
+    transform: rotate(3deg);
+}
+
+.paddingclass{
+    padding: 8px 0;
+}
+.footerclass{
+    position: relative;
+    top: 500px;
+    height: 50px;
+    
+}
+
+.iframeclass{
+
+    top: 400px;
+    position: relative;
+    left: -100px;
+    background: transparent;
+    border: 5px solid #ff0;
+    border-radius: 10px
+}
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 780px ) {
+    .text-container h1{
+        font-size: 36px;
+        letter-spacing: .20px;
+    }
+
+    .text-container h2{
+        font-size: 20px;
+        letter-spacing: .20px;
+    }
+    .text-container h3{
+        font-size: 15px;
+    }
+
+    .text-container a{
+        width: 35px;
+        height: 35px;
+        border: 1px solid;
+        margin-left: 20%;
+        padding: 5px;
+    }
+} */

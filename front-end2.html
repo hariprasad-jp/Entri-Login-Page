@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entri Elevate</title>
+    <link rel="shortcut icon" href="entri-logo.jpg">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <div class="full-page">
+        <header class="header">
+            <div class="heading">
+                <a href="front-end2.html" class="logo">
+                    <img src="White-without-background.png" alt="">
+                </a>
+                <nav class="nav">
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Menu">Menu</a>
+                    <a href="#Contact">Contact</a>
+                </nav>
+                <div class="toggle-btn"><ion-icon name="menu"></ion-icon></div>
+                <div class="dropdown-menu">
+                    <ul><a href="#Home">Home</a></ul>
+                    <ul><a href="#About">About</a></ul>
+                    <ul><a href="#Menu">Menu</a></ul>
+                    <ul><a href="#Contact">Contact</a></ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="main-container">
+
+                <div class="text-container">
+
+                    <div class="content-section">
+                        <h1>Welcome to Entri elevate</h1>
+                        <br>
+                        <h2>Learn in-demand coding skill to land your <span
+                                style="background-color: rgb(236, 236, 24); color: black; font-weight: bolder;">dream
+                                <br>job</span></h2>
+                        <br>
+                        <h3>Presenting Entri elevate, India's best placement oriented coding program in Regional
+                            language</h3>
+                        <a href="#Get-Started">Get Started</a>
+                    </div>
+
+                </div>
+
+                <div class="img-container">
+                    <div class="imgClass">
+
+                        <iframe class="iframeclass" width="300" height="200" src="https://www.youtube.com/embed/5Fsd6TfKKUU" title="Entri Elevate Landing Page" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                    </div>
+                </div>
+
+
+
+            </section>
+        </main>
+        <section class="login">
+            <div class="login-container">
+                <div class="login-section">
+                    <h1>Login</h1>
+                    <form action="#login-details">
+                        <div class="input-box">
+                            <div class="input-container">
+                                <div class="icon-class"><span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                </div>
+                                <div class="input-class">
+                                    <input type="email" class="input-field" required id="email"
+                                        placeholder="Enter your email" onkeyup="validateEmail()">
+                                    <span id="email-error"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-container">
+                                <div class="icon-class"><span class="icon"><ion-icon
+                                            name="lock-closed"></ion-icon></span></div>
+                                <div class="input-class">
+                                    <input type="password" class="input-field" required id="password"
+                                        placeholder="Enter your password" onkeyup="validatePassword()">
+                                    <label for="password"></label>
+                                    <span id="password-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="remember-forgot">
+                            <label for="remember-box"><input type="checkbox" style="cursor: pointer;">Remeber me</label>
+                            <a href="#forgotpass">Forgot password?</a>
+                        </div>
+                        <div class="login-button">
+                            <button type="submit" class="btn">Login</button>
+                        </div>
+                        <div class="register">
+                            <label for="reg">Don't have an account? <a href="Form2/edit.html">Register</a></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="mentors">
+            <div class="mentors-entri">
+                <h1 class="txtcenter paddingclass">Learn from the very best</h1>
+                <p class="txtcenter paddingclass">Expert mentornship to transform you into an in-demand talent</p>
+                <section id="about" class="section-two">
+                    <div class="card-container">
+                        <div class="image-container">
+                            <img src="entri_plan.png" alt="">
+                        </div>
+                        <h1>Danya</h2>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="image-container">
+                            <img src="elevate_plan.png" alt="">
+                        </div>
+                        <h1>Vinayak</h2>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="image-container">
+                            <img src="gold_plan.png" alt="">
+                        </div>
+                        <h1>Soorya</h2>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+
+        <footer class="footerclass txtcenter">Designed and developed by &copy Entri team</footer>
+
+
+
+
+
+    </div>
+
+    <script src="frontend.js"></script>
+
+</body>
+
+</html>
